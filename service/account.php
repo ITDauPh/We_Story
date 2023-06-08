@@ -8,7 +8,7 @@ session_start();
 function check_login($username, $password)
 {
     $md5_pass = md5($password);
-    $sql = 'select user_name, password from user_account where user_name = "' . $username . '" and password ="' . $password . '"';
+    $sql = 'select user_name, password from user_account where user_name = "' . $username . '" and password ="' . $md5_pass . '"';
     global $conn;
     $result = $conn->query($sql);
     if ($result->num_rows != 0) {
