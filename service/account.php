@@ -7,13 +7,12 @@ session_start();
 //kiem tra dang nhap
 function check_login($username, $password)
 {
-    $md5_pass = md5($password);
     $sql = 'select user_name, password from user_account where user_name = "' . $username . '" and password ="' . $password . '"';
     global $conn;
     $result = $conn->query($sql);
     if ($result->num_rows != 0) {
         while ($row = $result->fetch_assoc()) {
-            if ($row["user_name"] == $username && $row["password"] == $md5_pass) {
+            if ($row["user_name"] == $username && $row["password"] == $password) {
                 return true;
             }
         }
@@ -46,8 +45,8 @@ function add_user($username, $password)
         </script>
     <?php
     } else {
-        $md5_pass = md5($password);
-        $sql = 'insert into user_account (user_name, password) values ("' . $username . '","' . $md5_pass . '")';
+        
+        $sql = 'insert into user_account (user_name, password) values ("' . $username . '","' . $password . '")';
         global $conn;
         $conn->query($sql);
     ?>
@@ -91,7 +90,6 @@ if ($account == 'login') {
 } else {
     $password = $_REQUEST['password'];
     $username = $_REQUEST['user_name'];
-    add_user($username, $password);
 }
 
 
