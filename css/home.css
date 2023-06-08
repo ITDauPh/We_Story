@@ -1,79 +1,67 @@
-*, *::before, *::after{
-    text-decoration: none;
-    text-transform: capitalize;
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #010101;
-    font-family: "Ubuntu", sans-serif;
+
+
+
+
+h1 {
+    color: #333;
 }
 
-button{
-    border: 0;
-    outline: none;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: pointer;
+#countdown {
+    font-size: 48px;
+    margin-top: 50px;
+    text-align: center;
+    height: 200px;
+    color: #fff;
 }
-.navbar {
-    height: 90px;
-    background-color: #1a1a1a;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.heart {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    clip-path: polygon(50% 0%,
+            90% 0%,
+            100% 10%,
+            100% 30%,
+            50% 90%,
+            0% 30%,
+            0% 10%,
+            10% 0%);
+    animation: falling-heart 4s infinite;
 }
-.navbar .logo a{
-    font-size: 24px;
-    font-weight: 700;
-    color: white;
-    margin-left: 12px;
-}
-.menu{
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
-.menu-links{
-    display: flex;
-    gap: 24px;
-    border-right: 1px solid #999999;
-    padding-inline: 24px;
-}
-.menu-links a{
-    font-weight: 500;
-    color: #999999;
-    padding: 8px 16px;
-}
-.menu-links a:hover{
-    color: white;
-}
-.log-in{
-    font-weight: 500;
-    padding: 12px 22px;
-    background-color: transparent;
-    color: #999999;
-    border-radius: 10px;
-    border: 2px solid #0aa5ff;
-    transition: 0.2s;
-}
-.log-in:hover{
-    background-color: #0aa5ff;
-    color: white;
-}
-.menu-btn{
-    font-size: 32px;
-    color: white;
-    display: none;
-    cursor: pointer;
-}
-@media(max-width: 53rem){
-    .menu{
-        display: none;
+
+@keyframes falling-heart {
+    0% {
+        top: -100px;
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
     }
-    .menu-btn{
-        display: block;
+
+    100% {
+        top: 100%;
+        opacity: 0;
+        transform: rotate(360deg) scale(0.2);
     }
+}
+
+.grid-container {
+    display: grid;
+    gap: 50px 100px;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    color: #fff;
+    padding: 10px;
+
+}
+.grid-container img{
+    border-radius: 50%;
+
+}
+
+.grid-item {
+    
+    
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
 }
