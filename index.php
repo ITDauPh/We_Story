@@ -16,7 +16,7 @@
 <body>
 	<nav class="navbar">
 		<div class="nav_logo">
-			<i class="fa-solid fa-font-awesome">sdfsdfsdf</i>
+			<i class="fa-solid fa-font-awesome"></i>
 			<a href="">
 				<img src="logo/rc-high-resolution-logo-white-on-transparent-background.png" alt="">
 			</a>
@@ -28,7 +28,8 @@
 				<a href="">Contact</a>
 				<a href="">Blog</a>
 			</div>
-			<button class="log-in">log in</button>
+			<a href="./login.php"><button class="log-in">log in</button></a>
+			
 		</div>
 		<div class="menu-btn">
 			<i class="fa-soilid fa-bars"></i>
