@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/home.css">
+	
 	<style>
 
 	</style>
@@ -27,12 +28,18 @@
 				<a href="">About</a>
 				<a href="">Contact</a>
 				<a href="">Blog</a>
+		
 			</div>
-			<a href="./login.php"><button class="log-in">log in</button></a>
+			<div class="dropdown" id="dropdown">
+			<a href="login_form.php"><button id ='login-btn' class="log-in">log in</button></a>
+				<div class="dropdown-content" id="dropdown-content">
+					<a href="">Account</a>
+					<a href="">Setting</a>
+					<a href="login_form.php" onclick="lock_out()">Log out</a>
+				</div>
+			</div>
 			
-		</div>
-		<div class="menu-btn">
-			<i class="fa-soilid fa-bars"></i>
+			
 		</div>
 	</nav>
 	<div class="grid-container">
@@ -90,4 +97,6 @@
 		</section>
 </footer>
 <script src="js/day_count.js"></script>
+<script src="js/redicrect.js"></script>
+<script src="js/account.js"></script>
 </html>

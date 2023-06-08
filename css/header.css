@@ -67,11 +67,30 @@ button{
     color: white;
 }
 .menu-btn{
-    font-size: 32px;
-    color: white;
-    display: none;
-    cursor: pointer;
+    font-weight: 500;
+    color: #999999;
+    padding: 8px 16px;
 }
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: aliceblue;
+    width: 100px;
+    border-radius: 2%;
+}
+.dropdown-content a{
+    padding: 10px;
+    display: block;
+} 
+.dropdown-content a:hover{
+    color: #0aa5ff;
+} 
+
+
 @media(max-width: 53rem){
     .menu{
         display: none;
