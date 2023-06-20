@@ -90,6 +90,9 @@ button{
     color: #0aa5ff;
 } 
 
+.date-count {
+    display: none;
+}
 
 @media(max-width: 53rem){
     .menu{
