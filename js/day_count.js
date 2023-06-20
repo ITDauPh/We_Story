@@ -1,20 +1,11 @@
-function createFallingHeart() {
-    var heart = document.createElement('div');
-    heart.classList.add('heart');
-    document.body.appendChild(heart);
 
-    var randomX = Math.floor(Math.random() * window.innerWidth);
-    heart.style.left = (randomX - 100) + 'px';
-}
-
-setInterval(createFallingHeart, 1000);
 
 // Định nghĩa ngày bắt đầu của mối quan hệ
 var startDate = new Date("2022-10-02 00:00:00");
 
 function check_admin(){
   var name_lg = sessionStorage.getItem('username');
-  const name = ["0369153510", "NgocHuyen", "NguyenNgocHuyen", "NguyenThiNgocHuyen", "NGUYENTHINGOCHUYEN", "nguyenthingochuyen", "0868842242", "PhanVanDau", "dau", "Dau", "ngochuyen", "Huyen", "huyen", "HUYEN", "Huyền", "HUYỀN"];
+  const name = ["0369153510", "NgocHuyen", "NguyenNgocHuyen", "NguyenThiNgocHuyen", "NGUYENTHINGOCHUYEN", "nguyenthingochuyen", "0868842242", "PhanVanDau", "dau","Dậu", "dậu", "huyền", "Dau", "ngochuyen", "Huyen", "huyen", "HUYEN", "Huyền", "HUYỀN"];
   for (let i = 0; i < name.length; i++){
     if(name[i] == name_lg){
       document.getElementById('date-count').style.display = "block";

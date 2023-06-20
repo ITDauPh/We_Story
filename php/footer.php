@@ -2,7 +2,7 @@
 <footer>
 	<section class="footer-sections">
 		<section>
-			<img src="logo/roster-chill-high-resolution-logo-white-on-transparent-background.png" alt="Logo" class="logo">
+			<img src="logo/roosterchill-high-resolution-logo-white-on-transparent-background.png" alt="Logo" class="logo">
 			<span class="social-links">
 				<a href="">
 					<img src="icon/facebook.svg" alt="">
@@ -38,7 +38,7 @@
 		
 	</section>
 	<section class="footer-bottom">
-			© Roster and chill. 2023 All rights reserved
+			© Rooster&Chill. 2023 All rights reserved
 		</section>
 </footer>
 <script src="js/day_count.js"></script>
