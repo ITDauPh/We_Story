@@ -96,7 +96,7 @@ button{
 
 @media(max-width: 53rem){
     .menu{
-        display: none;
+        display: block;
     }
     .menu-btn{
         display: block;

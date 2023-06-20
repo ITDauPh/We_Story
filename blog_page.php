@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/blog_page.css">
-    <title>Blog</title>
-</head>
+<?php include 'php/header.php' ?>
 <body>
-    <?php include 'php/header.php' ?>
     <div class="app">
         <div class="cardList">
             <button class="cardList_btn btn btn--left">
@@ -55,14 +47,6 @@
             </div>
 
         </div>
-
-
-
-
     </div>
-
-
-
 </body>
 <?php include 'php/footer.php' ?>
-</html>

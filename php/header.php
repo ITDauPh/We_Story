@@ -2,7 +2,11 @@
 <html>
 
 <head>
+	<title>Rooster and Chill Story</title>
+	<link rel="icon" type="image/x-icon" href="./images/infinity.png">
 	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/home.css">
 </head>
 
 
@@ -36,4 +40,3 @@
 		</div>
 	</nav>
 	
-</html>

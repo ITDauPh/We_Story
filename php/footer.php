@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>	
-	<link rel="stylesheet" href="css/footer.css">
-	<style>
-
-	</style>
-</head>
-
-
-
 
 <footer>
 	<section class="footer-sections">
